@@ -3,8 +3,9 @@ import './App.css'
 import Home from './pages/Home'
 import Cart from './pages/Cart'
 import View from './pages/View'
-import Home from './pages/Wishlist'
+import Wishlist from './pages/Wishlist'
 import Pnf from './pages/Pnf'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -12,12 +13,14 @@ function App() {
   return (
     <>
      <Routes>
-      <Route path='/home' element={<Home/>}></Route>
+      <Route path='/' element={<Home/>}></Route>
       <Route path='/cart' element={<Cart/>}></Route>
       <Route path='/:id/view' element={<View/>}></Route>
       <Route path='/wishlist' element={<Wishlist/>}></Route>
       <Route path='/*' element={<Pnf/>}></Route>
      </Routes>
+
+     <Footer/>
     </>
   )
 }
