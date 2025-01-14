@@ -8,7 +8,7 @@ const View = () => {
       <Header/>
       <div className='flex flex-col mx-5'>
         <div className='grid grid-cols-2 items-center h-screen'>
-            <img style={{width:'350px', height:'250px'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7o94CQVxy3SWj7Mygbij-o8JZCvZmgChyw&s" alt="" />
+            <img style={{width:'550px', height:'350px', objectFit:'cover', padding:'20px'}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp7o94CQVxy3SWj7Mygbij-o8JZCvZmgChyw&s" alt="" />
 
             <div>
                 <h3 className='font-bold'>PID : 2</h3>

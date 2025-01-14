@@ -40,11 +40,18 @@ const Cart = () => {
                 </tbody>
               </table>
 
-              <div className='flex-right mt-5'>
+              <div className='mt-5 flex justify-end'>
                 <button className='bg-red-600 rounded p-2 text-white'> Empty Cart</button>
                 <Link to={'/'} className='bg-blue-600 ms-3 rounded text-white p-2'>Shop more...</Link>
               </div>
 
+            </div>
+            <div className='col-span-1 border rounded p-5 shadow'>
+                <div className='bordee rounded p-5'>
+                  <h2 className='text-2xl font-bold my-4'>Total Amount: <span className='text-red-600' >$250</span></h2>
+                  <hr />
+                </div>
+                <button className='bg-green-600 p-2 text-white w-full mt-4'> Check Out</button>
             </div>
           </div>
         </>
