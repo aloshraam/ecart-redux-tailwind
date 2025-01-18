@@ -15,6 +15,8 @@ const View = () => {
 
   const [product,setProduct] = useState({})
 
+  console.log("product herer",product);
+
   const {id} = useParams()
   console.log(id);
 
@@ -75,8 +77,8 @@ const View = () => {
                     
                     {
                       product?.reviews?.length?
-                      product?.reviews?.map(item=>(
-                        <div key={item.reviewerEmail} className='shadow border rounded p-2'>
+                      product?.reviews?.map((item,index)=>(
+                        <div key={index} className='shadow border rounded p-2'>
                             <h5>
                                 <span className='text-bold'>{item.reviewerName}</span> : <span>{item.comment}</span>
                             </h5>

@@ -20,11 +20,11 @@ const Home = () => {
   return (
     <>
       <Header insideHome = {true}/>
-      <div className='container px-4 mb-5' style={{paddingTop:'100px'}}> 
+      <div className=' px-4 mb-5' style={{paddingTop:'100px'}}> 
       {/* mx-auto */}
         {
           loading?
-          <div className='flex flex-col justify-center items-center text-2xl ml-52'>
+          <div className='flex flex-col justify-evenly items-center text-2xl mr-12'>
             <img width={'110px'} height={'110px'} className='text-purple-600' src="https://icon-library.com/images/loading-icon-animated-gif/loading-icon-animated-gif-25.jpg" alt="" />
             <h3 className='text-purple-600 ml-5'>Loading...</h3>
           </div>
